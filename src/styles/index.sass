@@ -1,0 +1,1668 @@
+$c_bg_beige: #FFF8F2
+$c_orange_main: #FF553E
+$c_black: #1C0E0D
+$c_gray: #404040
+$c_bg_blue: #F3FDFE
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap')
+@mixin font_header
+  font-family: Poppins
+  font-style: normal
+  font-weight: 400
+  font-size: 18px
+  line-height: 24px
+
+@mixin Poppins_500_24
+  font-family: Poppins
+  font-style: normal
+  font-weight: 500
+  font-size: 24px
+
+@mixin font_header_800
+  font-family: Poppins
+  font-style: normal
+  font-weight: 800
+  font-size: 64px
+  line-height: 90px
+
+@mixin font_header_800_28
+  font-family: Poppins
+  font-style: normal
+  font-weight: 800
+  font-size: 28px
+
+@mixin font_header_600
+  font-family: Poppins
+  font-style: normal
+  font-weight: 600
+  font-size: 48px
+  line-height: 90px
+
+@mixin font_header_600_64
+  font-family: Poppins
+  font-style: normal
+  font-weight: 600
+  font-size: 64px
+
+@mixin font_header_600_24
+  font-family: Poppins
+  font-style: normal
+  font-weight: 600
+  font-size: 24px
+
+@mixin inter_text_400
+  font-family: Inter
+  font-style: normal
+  font-weight: 400
+  font-size: 18px
+  color: $c_gray
+
+@mixin inter_text_400_14
+  font-family: Inter
+  font-style: normal
+  font-weight: 400
+  font-size: 14px
+  color: $c_gray
+
+@mixin inter_text_600
+  font-family: Inter
+  font-style: normal
+  font-weight: 600
+  font-size: 28px
+
+@mixin inter_text_400
+  font-family: Inter
+  font-style: normal
+  font-weight: 400
+
+@mixin inter_text_600_48
+  font-family: Inter
+  font-style: normal
+  font-weight: 600
+  font-size: 48px
+
+@mixin inter_text_700_64
+  font-family: Inter
+  font-style: normal
+  font-weight: 700
+  font-size: 64px
+
+@mixin font_header_600_18
+  font-family: Poppins
+  font-style: normal
+  font-weight: 600
+  font-size: 18px
+
+@mixin font_header_600_28
+  font-family: Poppins
+  font-style: normal
+  font-weight: 600
+  font-size: 28px
+  color: #FFFFFF
+
+.header
+  @media (min-width: 991px)
+    @include font_header
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+    padding-top: 40px
+    background: $c_bg_beige
+
+  &__nav
+    &__link
+      &:not(:last-child)
+        margin-right: 48px
+
+  &__logo
+
+    width: 178.57px
+    height: 40px
+
+  &__auth
+    color: $c_orange_main
+    margin-right: 36px
+
+  &__auth__signup
+
+    width: 133px
+    height: 60px
+    color: #fff
+
+    background: $c_orange_main
+    border-radius: 34px
+
+@media screen and (max-width: 990px)
+  .header__col
+    display: none
+
+.burger_menu
+  @media (min-width: 990.02px)
+    display: none
+  background-color: $c_bg_beige
+  padding-bottom: 34px
+  padding-top: 28px
+
+.container
+  max-width: 1050px
+  width: 90%
+  margin: auto
+  z-index: 12
+
+
+.navbar
+  width: 100%
+  background-color: $c_bg_beige
+
+
+.nav-container
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 62px
+  //margin-top: 31px
+  //margin-bottom: 34px
+  background-color: $c_bg_beige
+
+
+.navbar .nav-container li
+  list-style: none
+
+
+.navbar .nav-container a
+  text-decoration: none
+  font-weight: 500
+  font-size: 1.8rem
+
+
+.navbar .nav-container a:hover
+  font-weight: bolder
+
+
+.nav-container
+  display: block
+  position: relative
+  height: 60px
+
+
+.nav-container .checkbox
+  position: absolute
+  display: block
+  height: 32px
+  width: 32px
+  top: 20px
+  left: 20px
+  z-index: 5
+  opacity: 0
+  cursor: pointer
+
+
+.nav-container .hamburger-lines
+  display: block
+  height: 26px
+  width: 32px
+  position: absolute
+  top: 17px
+  left: 20px
+  z-index: 2
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+
+.nav-container .hamburger-lines .line
+  display: block
+  height: 4px
+  width: 100%
+  border-radius: 10px
+  background: #0e2431
+
+
+.nav-container .hamburger-lines .line1
+  transform-origin: 0% 0%
+  transition: transform 0.4s ease-in-out
+
+
+.nav-container .hamburger-lines .line2
+  transition: transform 0.2s ease-in-out
+
+
+.nav-container .hamburger-lines .line3
+  transform-origin: 0% 100%
+  transition: transform 0.4s ease-in-out
+
+
+.navbar .menu-items
+  background-color: #FA865F
+  border-radius: 50px
+  //padding-top: 120px
+  //box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5)
+  //height: 100vh
+  width: 100%
+  height: 80vw
+  transform: translate(-150%)
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-evenly
+  //margin-left: -40px
+  //padding-left: 50px
+  transition: transform 0.5s ease-in-out
+  text-align: center
+
+
+.navbar .menu-items li
+  font-family: Poppins
+  font-size: 1.5rem
+  font-weight: 500
+
+.humb_sing_up
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #ffffff
+  border-radius: 50px
+  width: 221px
+  aspect-ratio: 3 / 1
+
+
+.logo
+  position: absolute
+  top: 5px
+  right: 15px
+  width: 41.28%
+
+.logo_img
+  width: 100%
+
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items
+  transform: translateX(0)
+
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1
+  transform: rotate(45deg)
+
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2
+  transform: scaleY(0)
+
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3
+  transform: rotate(-45deg)
+
+
+.nav-container input[type="checkbox"]:checked ~ .logo
+  display: none
+
+.main
+  background: $c_bg_beige
+  display: flex
+  justify-content: center
+  overflow: hidden
+
+  &__page
+    width: 1920px
+    @media (min-width: 768.01px)
+      min-height: 1033px
+    @media (max-width: 768px)
+      margin-bottom: 85px
+    position: relative
+
+
+    &__textinfo
+      display: flex
+      flex-direction: column
+      align-items: center
+      @media (min-width: 768.01px)
+        padding-top: 220px
+
+
+      &__group
+        position: relative
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: center
+        @media (max-width: 768px)
+          margin-top: 40px
+        @media (min-width: 768.01px)
+          width: 800px
+          height: 477px
+
+        &__clipboard
+          position: absolute
+          top: 248px
+          left: 617px
+          z-index: 0
+          width: 250px
+          height: 250px
+          @media (max-width: 960px)
+            display: none
+
+        &__phone_target
+          position: absolute
+          transform: rotate(-15deg)
+          top: 95px
+          left: -434px
+          z-index: 0
+          width: 338px
+          height: 680px
+          @media (max-width: 1440px)
+            display: none
+
+        &__phone_app
+          position: absolute
+          transform: rotate(15deg)
+          top: -35px
+          left: 796px
+          z-index: 0
+          width: 565px
+          height: 1048px
+          @media (max-width: 1440px)
+            display: none
+
+        &__alarm
+          position: absolute
+          top: -126px
+          left: -294px
+          z-index: 0
+          width: 287px
+          height: 208px
+          @media (max-width: 768px)
+            top: -126px
+            left: 490px
+            width: 39.73%
+            top: 80%
+            left: 57.6%
+            height: auto
+
+
+        &__header
+          @include font_header_800
+          @media (max-width: 768px)
+            @include font_header_800_28
+            line-height: 44.8px
+            text-align: left
+            width: 79.2%
+          text-align: center
+          color: $c_black
+
+
+      &__text
+        margin-top: 24px
+        width: 595px
+
+        font-family: Inter
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        line-height: 36px
+        text-align: center
+        color: #40201E
+        opacity: 0.8
+        @media (max-width: 768px)
+          @include inter_text_400
+          font-size: 18px
+          text-align: left
+          width: 81.86%
+
+      &__button
+        margin-top: 68px
+        padding: 24px 40px
+        width: 240px
+        height: 76px
+        background: $c_orange_main
+        border-radius: 40px
+        font-family: 'Poppins'
+        font-style: normal
+        font-weight: 500
+        font-size: 18px
+        line-height: 28px
+        color: #FFFFFF
+        @media (max-width: 768px)
+          align-self: flex-start
+          margin-left: 8.27%
+
+.main_swash
+  background: url('../assets/main_page/swash_mp.png') no-repeat
+  background-size: 176px 35px
+  background-position-x: 0px
+  background-position-y: 52px
+  @media (max-width: 768px)
+    background-size: 106px 21px
+    background-position-x: 6px
+    background-position-y: 17px
+
+
+.features
+  position: relative
+  background: #FFFFFF
+  display: flex
+  justify-content: center
+
+  &__page
+    position: relative
+    margin: 0 auto
+    width: 1920px
+    @media (max-width: 955px)
+      display: flex
+      align-items: center
+      flex-direction: column
+
+    &__digits
+      display: flex
+      align-items: center
+      justify-content: space-evenly
+      padding-top: 94px
+      @media screen and (max-width: 955px)
+        flex-direction: column
+        padding-top: 48px
+      @media (min-width: 955.01px)
+        flex-direction: row
+
+    &__textinfo
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding-top: 223px
+      @media screen and (max-width: 955px)
+        padding-top: 6px
+        width: 87%
+
+      &__group
+        position: relative
+        @media (min-width: 955px)
+
+          display: flex
+          align-items: center
+
+
+        &__header
+
+          @include font_header_600
+          line-height: 70px
+          text-align: center
+          color: $c_black
+
+
+          @media (max-width: 500.01px)
+            line-height: 36px
+            width: 95.1%
+            @include font_header_600_24
+
+        &__3d_rocket
+          position: absolute
+          z-index: 0
+          bottom: -92px
+          left: 818px
+          width: 197px
+          height: 183px
+          @media (max-width: 1250px)
+            display: none
+
+        &__star
+          position: absolute
+          z-index: 0
+          bottom: 151px
+          left: -466px
+          width: 164px
+          height: 141px
+
+      &__text
+        margin-top: 20px
+        @media (min-width: 955px)
+          width: 659px
+          height: 72px
+        @media (min-width: 500.01px) and (max-width: 955px)
+          width: 60%
+        @media (max-width: 500px)
+          width: 100%
+          margin-top: 14px
+        @include inter_text_400
+        line-height: 36px
+        text-align: center
+        opacity: 0.8
+
+.features_swash
+  background: url('../assets/main_page/swash_mp.png') no-repeat
+  background-size: 176px 35px
+  background-position-x: 7px
+  background-position-y: 29px
+  @media (max-width: 500px)
+    background-size: 106px 21px
+    background-position-x: 6px
+    background-position-y: 17px
+
+.digits_line
+  width: 180px
+  border: none
+  border-top: 1px solid #1E0C3E
+  opacity: 0.2
+  margin-bottom: 48px
+  @media (min-width: 955.01px)
+    display: none
+
+.text_item_group
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.main_digits
+  @include font_header_600
+  @media (max-width: 955px)
+    @include font_header_600_64
+    line-height: 64px
+
+
+.explanations
+  @include inter_text_400
+  opacity: 0.6
+  @media (max-width: 955px)
+    margin-top: 28px
+    margin-bottom: 48px
+
+.cards
+  display: flex
+  justify-content: center
+  margin-top: 64px
+  padding-bottom: 77px
+  @media (max-width: 955px)
+    flex-direction: column
+    align-items: center
+  @media (max-width: 500px)
+    width: 91.46%
+  @media (min-width: 500.01px) and (max-width: 955px)
+    width: 60%
+    aspect-ratio: 1.8 / 1
+
+.card
+  width: 19.22%
+  min-width: 275.5px
+  aspect-ratio: 1.43 / 1
+  padding-bottom: 28px
+  padding-right: 28px
+  @media (max-width: 955px)
+    width: 100%
+    aspect-ratio: 1.7 / 1
+  @media (min-width: 955.01px)
+    &:not(:last-child)
+      margin-right: 32px
+  @media (max-width: 955px)
+    &:not(:last-child)
+      margin-bottom: 20px
+
+  box-shadow: 14px 20px 48px rgba(25, 15, 44, 0.06)
+  border-radius: 48px
+
+.blue_bg
+  background: #70D0DC
+
+.purple_bg
+  background: #7562E0
+
+.orange_bg
+  background: #FA865F
+
+.icon
+  width: 88px
+  height: 88px
+  margin-top: 28px
+  margin-left: 28px
+  @media (max-width: 955px)
+    width: 20%
+    height: auto
+
+.card_group_text
+  margin-top: 24px
+  margin-left: 30px
+  @media (max-width: 955px)
+    margin-top: 9%
+
+.card_text
+  margin-top: 10px
+  @include inter_text_400
+  color: #FFFFFF
+  opacity: 0.8
+  line-height: 26px
+  @media (min-width: 500.01px) and (max-width: 955px)
+    font-size: 20px
+
+.card_header
+  @include font_header_600_28
+
+.br_1
+  @media (min-width: 1886px), (max-width: 955px)
+    display: none
+
+.analytics
+  position: relative
+  background: #FFFFFF
+  display: flex
+  justify-content: center
+
+  &__page
+    position: relative
+    margin: 0 auto
+    width: 1920px
+    padding-top: 70px
+    padding-bottom: 109px
+    display: flex
+    align-items: center
+    @media (max-width: 780px)
+      flex-direction: column
+    @media (max-width: 780px)
+      padding-bottom: 60px
+      padding-top: 0
+
+    &__textinfo
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      margin-left: 1.77%
+      width: 48%
+      @media (max-width: 780px)
+        width: 84%
+
+      &__header
+        max-width: 568px
+        @include font_header_600
+        line-height: 68px
+        text-align: left
+        color: #18063C
+        @media (max-width: 780px)
+          margin-top: 48px
+          @include font_header_600_24
+          line-height: 36px
+
+      &__text
+        max-width: 561px
+        margin-top: 20px
+        @include inter_text_400
+        opacity: 0.8
+        line-height: 36px
+
+      &__icon_text_group
+        margin-top: 48px
+        display: flex
+        flex-direction: row
+        align-items: flex-start
+
+.a_p_t
+  @media (min-width: 780px)
+    display: none
+
+.a_p_t_m
+  @media (max-width: 780.01px)
+    display: none
+
+.analytics_swash
+  background: url('../assets/main_page/swash_mp.png') no-repeat
+  background-size: 176px 35px
+  background-position-x: 7px
+  background-position-y: 29px
+  @media (max-width: 780px)
+  @media (max-width: 780px)
+    background-size: 106px 21px
+    background-position-x: 0
+    background-position-y: 12px
+
+.phone_wrapper
+  max-width: 941px
+  width: 49%
+  @media (max-width: 780px)
+    margin-left: -14%
+    width: 100%
+
+.phone_diagram
+  width: 100%
+
+.icon_text
+  @media (min-width: 780.01px)
+    margin-left: 24px
+    min-width: 285px
+  @media (max-width: 780px)
+    margin-left: 5.82%
+
+
+.icon_text_header
+  @include font_header_600_28
+  color: $c_gray
+  @media (max-width: 780px)
+    @include font_header_600_18
+    line-height: 21px
+
+.icon_text_text
+  margin-top: 8px
+  @include inter_text_400
+  opacity: 0.8
+  line-height: 36px
+  max-width: 300px
+  @media (max-width: 780px)
+    line-height: 25px
+    @include inter_text_400_14
+
+.analytics_icon
+  width: 88px
+  height: 88px
+  @media (max-width: 780px)
+    width: 18.12%
+    height: auto
+
+.under_swash
+  background: url('../assets/main_page/swash_mp.png') no-repeat
+  background-size: 176px 35px
+  background-position-x: 12px
+  background-position-y: 31px
+
+.u_s_no-wrap
+  white-space: nowrap
+
+.description
+  position: relative
+  background: $c_bg_blue
+  display: flex
+  justify-content: center
+
+  &__page
+    align-items: center
+    position: relative
+    width: 1920px
+    margin-top: 140px
+    display: flex
+    margin-bottom: 156px
+    @media (max-width: 880px)
+      flex-direction: column
+      margin-top: 48px
+      margin-bottom: 48px
+
+    &__textinfo
+      width: 36.88%
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      @media (max-width: 880px)
+        width: 81.86%
+
+      &__header
+        width: 100%
+        @media (min-width: 1920px)
+          min-width: 707px
+        @include font_header_600
+        line-height: 68px
+        text-align: left
+        color: #18063C
+        @media (max-width: 780px)
+          width: 82.08%
+          margin-bottom: 12px
+          //margin-top: 48px
+          @include font_header_600_24
+          line-height: 36px
+
+      &__text
+        width: 100%
+        max-width: 699px
+        margin-top: 20px
+        @include inter_text_400
+        opacity: 0.8
+        line-height: 36px
+        @media (max-width: 880px)
+          display: none
+
+      &__icon_text_group
+        margin-top: 64px
+        display: flex
+        flex-direction: row
+        width: 65.63%
+        @media (min-width: 880.01px)
+          min-width: 421px
+        @media (max-width: 880px)
+          width: 100%
+          margin-top: 24px
+          align-items: flex-start
+
+.description_swash
+  background: url('../assets/main_page/swash_mp.png') no-repeat
+  background-size: 176px 35px
+  background-position-x: 7px
+  background-position-y: 32px
+  @media (max-width: 780px)
+    background-size: 85px 18px
+    background-position-x: 0
+    background-position-y: 15px
+
+.bundle_wrapper
+  position: relative
+  max-width: 383px
+  width: 19.95%
+  left: -8%
+  @media (min-width: 1921px)
+    left: 0
+    margin-right: 7.97%
+  margin-top: 124px
+  @media (max-width: 880px)
+    display: none
+
+.bundle
+  max-width: 100%
+
+.description_icon
+  width: 25%
+  @media (max-width: 880px)
+    width: 18.24%
+    height: auto
+
+.description_icon_text
+  @media (min-width: 880.01px)
+    margin-left: 48px
+    min-width: 285px
+
+  @media (max-width: 880px)
+    margin-left: 5.86%
+    width: 82%
+
+
+.add_d_i_margin
+  @media (min-width: 1460px)
+    margin-left: 24.61%
+
+.description__page__cards
+  width: 35.52%
+  display: flex
+  flex-direction: row
+  @media (max-width: 1200px)
+    flex-direction: column
+    align-items: flex-end
+  @media (max-width: 880px)
+    flex-direction: column-reverse
+    width: 71.47%
+    align-items: center
+    margin-top: 48px
+
+.description__page__cards_1-2
+  width: 38.41%
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  align-self: end
+  margin-left: 28px
+  @media (max-width: 1460px)
+    width: 50%
+  @media (max-width: 880px)
+    width: 100%
+    align-items: center
+    margin-left: 0
+    margin-top: 45px
+
+.description_card
+  filter: drop-shadow(0px 32px 54px rgba(65, 74, 85, 0.05))
+
+.d_c_1
+  width: 100%
+
+.d_c_2
+  margin-top: 27px
+  width: 86.19%
+  @media (max-width: 880px)
+    display: none
+
+.d_c_3
+  width: 100%
+
+.description__page__cards_3
+  width: 56.89%
+  @media (max-width: 1200px)
+    margin-top: 27px
+  @media (max-width: 880px)
+    width: 100%
+    margin: 0
+
+  margin-left: 27px
+
+.target_wrapper
+  margin-left: -77px
+  margin-top: -385px
+
+.target_v2
+  @media (max-width: 1800px)
+  display: none
+  @media (max-width: 1920px)
+    left: 100px
+  @media (min-width: 1921px)
+    display: none
+
+.target_v1
+  @media (max-width: 1921px)
+    display: none
+  @media (min-width: 1920px)
+    left: 100px
+    width: 375px
+
+
+.prices
+  position: relative
+  background: #FFFFFF
+  display: flex
+  justify-content: center
+  margin-top: 140px
+  margin-bottom: 160px
+  @media (max-width: 780px)
+    margin: 0
+  &__page
+    position: relative
+    margin: 0 auto
+    width: 1920px
+    margin-top: 140px
+    margin-bottom: 160px
+    display: flex
+    justify-content: center
+    @media (max-width: 600px)
+      margin-top: 80px
+      margin-bottom: 80px
+
+    &__information
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      @media (max-width: 780px)
+        width: 87.2%
+
+      &__header
+        max-width: 638px
+        @include font_header_600
+        line-height: 70px
+        text-align: center
+        color: #18063C
+        @media (max-width: 600px)
+          font-size: 24px
+          line-height: 36px
+
+      &__text
+        max-width: 326px
+        padding-top: 10px
+        @include inter_text_400
+        opacity: 0.8
+        line-height: 36px
+
+.prices_swash
+  background: url('../assets/main_page/swash_mp.png') no-repeat
+  background-size: 176px 35px
+  background-position-x: 118px
+  background-position-y: 29px
+  @media (max-width: 600px)
+    background-size: 106px 21px
+    background-position-x: 39px
+    background-position-y: 9px
+
+.tarifs
+  display: flex
+  flex-direction: row
+  @media (max-width: 1030px)
+    flex-direction: column
+  @media (max-width: 780px)
+    width: 100%
+
+
+.prices_card
+  display: flex
+  margin-top: 64px
+  width: 470px
+  height: 608px
+  border: 1px solid $c_orange_main
+  border-radius: 110px
+  justify-content: center
+  @media (max-width: 780px)
+    display: none
+
+.mobile_prices_card
+  display: flex
+  flex-direction: column
+  margin-top: 40px
+  width: 100%
+  //aspect-ratio: 1.135 / 1
+  //height: 608px
+  border: 1px solid $c_orange_main
+  border-radius: 30px
+  justify-content: center
+  align-items: center
+
+
+  @media (min-width: 780.1px)
+    display: none
+
+.mobile_price_text_group
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.prices_card_group
+  display: flex
+  flex-direction: column
+  @media (max-width: 780px)
+    width: 84.09%
+
+
+.p_card_header
+  margin-top: 64px
+  text-align: center
+  @include inter_text_600_48
+  color: #18063C
+  line-height: 48px
+  @media (max-width: 600px)
+    @include inter_text_600
+    font-size: 20px
+    line-height: 20px
+    align-self: flex-end
+    margin-top: 36px
+
+.p_card_text
+  margin-top: 56px
+  @include inter_text_600
+  text-align: center
+  line-height: 52px
+  color: $c_orange_main
+  @media (max-width: 780px)
+    margin-top: 25px
+    text-align: left
+  @media (max-width: 600px)
+    @include inter_text_400
+    font-size: 18px
+    line-height: 20px
+
+.pct_higher
+  margin-top: 20px
+
+.price_text
+  display: flex
+  flex-direction: row
+  justify-content: center
+  margin-top: 64px
+  @media (max-width: 780px)
+    margin-top: 36px
+
+
+.dollar
+  margin-top: 6px
+  @include inter_text_400
+  opacity: 0.7
+  @media (max-width: 600px)
+    font-size: 18px
+    align-self: center
+
+.cost
+  @include inter_text_700_64
+  line-height: 64px
+  margin-left: 4px
+  align-self: flex-end
+  @media (max-width: 600px)
+    font-size: 28px
+    line-height: 28px
+
+.forever
+  @include inter_text_400
+  align-self: flex-end
+  line-height: 28px
+  opacity: 0.4
+  margin-left: 8px
+  @media (max-width: 600px)
+    font-size: 18px
+
+.prices_button_free
+  margin-top: 64px
+  padding: 24px 40px
+  width: 240px
+  height: 76px
+  background: $c_orange_main
+  border-radius: 40px
+  font-family: Poppins
+  font-style: normal
+  font-weight: 500
+  font-size: 18px
+  line-height: 28px
+  color: #FFFFFF
+  display: flex
+  align-items: center
+  justify-content: center
+  @media (max-width: 780px)
+    width: 73.39%
+    margin-top: 30px
+    margin-bottom: 36px
+
+
+.prices_button_premium
+  margin-top: 64px
+  padding: 24px 40px
+  width: 240px
+  height: 76px
+  background: #fff
+  border-radius: 40px
+  font-family: 'Poppins'
+  font-style: normal
+  font-weight: 500
+  font-size: 18px
+  line-height: 28px
+  color: $c_orange_main
+  display: flex
+  align-items: center
+  justify-content: center
+  @media (max-width: 780px)
+    width: 73.39%
+    margin-top: 30px
+    margin-bottom: 36px
+
+
+.add_p_c_margin
+  margin-right: 30px
+  @media (max-width: 1030px)
+    margin-right: 0
+
+.p_c_premium
+  background: #FF553E
+  border-radius: 110px
+  @media (max-width: 780px)
+    border-radius: 30px
+
+
+.c_white
+  color: #fff
+
+.hourglass
+  position: absolute
+  margin-top: 360px
+  margin-left: 1023px
+  @media (max-width: 1285px)
+    display: none
+
+.hand
+  position: absolute
+  margin-top: 481px
+  margin-left: -1848px
+
+.switch
+  position: relative
+  display: inline-block
+  width: 84px
+  height: 40px
+
+
+.switch input
+  display: none
+
+.slider
+  position: absolute
+  cursor: pointer
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: $c_orange_main
+  -webkit-transition: .4s
+  transition: .4s
+
+
+.slider:before
+  position: absolute
+  content: ""
+  height: 28px
+  width: 28px
+  left: 6px
+  bottom: 6px
+  background-color: white
+  -webkit-transition: .4s
+  transition: .4s
+
+
+input:checked + .slider
+  background-color: #ffddd8
+
+
+input:focus + .slider
+  box-shadow: 0 0 1px #ffddd8
+
+
+input:checked + .slider:before
+  -webkit-transform: translateX(43px)
+  -ms-transform: translateX(43px)
+  transform: translateX(43px)
+
+//Rounded sliders
+.slider.round
+  border-radius: 34px
+
+.slider.round:before
+  border-radius: 50%
+
+.toggle
+  margin-top: 58px
+  display: flex
+  flex-direction: row
+  align-items: center
+  @include Poppins_500_24
+  line-height: 28px
+  color: $c_gray
+
+  :not(:last-child)
+    margin-right: 20px
+
+  @media (max-width: 600px)
+    font-size: 18px
+
+.partners
+  position: relative
+  background: $c_bg_blue
+  display: flex
+  justify-content: center
+  @media (max-width: 1050px)
+    justify-content: center
+  @media (max-width: 1000px)
+    background: white
+
+
+  &__page
+    align-items: center
+    position: relative
+    margin: 0 auto
+    width: 1920px
+    margin-top: 120px
+    margin-bottom: 80px
+    display: flex
+    @media (max-width: 1000px)
+      width: 86.36%
+      justify-content: center
+      margin-top: 0px
+      flex-direction: column
+      align-items: flex-start
+
+    &__textinfo
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      max-width: 568px
+      margin-left: 5%
+      @media (max-width: 1000px)
+        width: 100%
+        margin-left: 0
+      @media (min-width: 1920px)
+        min-width: 568px
+
+      &__header
+        @media (min-width: 1920px)
+          min-width: 415px
+        max-width: 520px
+        @include font_header_600
+        line-height: 70px
+        text-align: left
+        color: #18063C
+        @media (max-width: 1000px)
+          width: 69.65%
+        @media (max-width: 660px)
+          font-size: 24px
+          line-height: 33.6px
+
+      &__text
+        @media (min-width: 1920px)
+          min-width: 415px
+          max-width: 471px
+        margin-top: 24px
+        @include inter_text_400
+        opacity: 0.8
+        line-height: 36px
+        @media (max-width: 1000px)
+          width: 100%
+        @media (max-width: 660px)
+          line-height: 28.8px
+.partners_swash
+  background: url('../assets/main_page/swash_mp.png') no-repeat
+  background-size: 176px 35px
+  background-position-x: 69px
+  background-position-y: 31px
+  @media (max-width: 600px)
+    background-size: 106px 21px
+    background-position-x: 6px
+    background-position-y: 17px
+
+
+.partner_card_column
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+
+.small_partners_card
+  max-width: 240px
+  width: 67.04%
+
+.big_partners_card_1
+  max-width: 358px
+  width: 100%
+
+.middle_partners_card
+  max-width: 315px
+  width: 81.82%
+
+.big_partners_card_2
+  max-width: 385px
+  width: 100%
+
+.column_1
+  min-width: 229px
+  width: 18.65%
+  margin-left: 3.96%
+  @media (max-width: 1050px)
+    margin-left: 10px
+  :not(:last-child)
+    margin-bottom: 54px
+  @media (max-width: 1000px)
+    display: none
+
+.column_2
+  min-width: 246px
+  width: 20.05%
+  align-items: flex-start
+  margin-left: 2.92%
+  :not(:last-child)
+    margin-bottom: 59px
+  @media (max-width: 1000px)
+    display: none
+
+.partners_button_get_started
+  margin-top: 48px
+  padding: 24px 40px
+  width: 184px
+  height: 76px
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 1px solid $c_orange_main
+  border-radius: 40px
+
+  font-family: Poppins
+  font-style: normal
+  font-weight: 500
+  font-size: 18px
+  line-height: 28px
+  color: $c_orange_main
+  @media (max-width: 660px)
+    width: 60.96%
+    margin-top: 28px
+  @media (max-width: 1000px)
+    margin-bottom: 40px
+.partners_card
+  width: 46.87%
+.partner_card_row_1
+  width: 79.25%
+  @media (min-width: 1000.1px)
+    display: none
+.partner_card_row_2
+  margin-top: 3%
+  width: 79.25%
+  @media (min-width: 1000.1px)
+    display: none
+.add_margin_m_c
+  margin-right: 3%
+.reviews
+  position: relative
+  background: white
+  display: flex
+  justify-content: center
+
+  &__page
+    position: relative
+    margin: 0 auto
+    width: 1920px
+    margin-top: 173px
+    margin-bottom: 244px
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+
+    &__textinfo
+      display: flex
+      flex-direction: column
+      align-items: center
+      min-width: 568px
+
+      &__header
+        max-width: 498px
+        @include font_header_600
+        line-height: 70px
+        text-align: left
+        color: #18063C
+
+      &__text
+        max-width: 302px
+        padding-top: 20px
+        @include inter_text_400
+        opacity: 0.8
+        line-height: 36px
+
+.lower_sw_3
+  background-position-x: 99px
+  background-position-y: 31px
+
+.review_block
+  margin-top: 60px
+  display: flex
+  flex-direction: row
+
+.review_block_text_info
+  display: flex
+  flex-direction: column
+  margin-top: 65px
+  margin-left: 38px
+
+.oval
+  width: 298px
+  height: 379px
+
+.review_block_text_info_text
+  max-width: 652px
+  font-family: Inter
+  font-style: normal
+  font-weight: 400
+  font-size: 20px
+  line-height: 36px
+  opacity: 0.8
+
+.review_block_text_info_author
+  margin-top: 36px
+  font-family: Inter
+  font-style: normal
+  font-weight: 500
+  font-size: 24px
+  line-height: 24px
+
+.review_block_text_info_profession
+  margin-top: 16px
+  font-family: Inter
+  font-style: normal
+  font-weight: 500
+  font-size: 18px
+  line-height: 26px
+  opacity: 0.7
+
+.like
+  width: 272px
+  position: absolute
+  margin-top: -514px
+  margin-left: -1543px
+
+.chat
+  width: 196px
+  position: absolute
+  margin-top: 418px
+  margin-left: -1162px
+
+.emoji
+  width: 163px
+  position: absolute
+  margin-top: 813px
+  margin-left: 1552px
+  //1730
+  @media (max-width: 1730px)
+    display: none
+
+.get
+  overflow: hidden
+  position: relative
+  background: $c_bg_beige
+  display: flex
+  justify-content: center
+
+  &__page
+    position: relative
+    margin: 0 auto
+    max-width: 1920px
+    margin-top: 96px
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    align-items: center
+    @media (max-width: 1250px)
+      justify-content: center
+
+    &__textinfo
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      @media (min-width: 1920px)
+        min-width: 529px
+
+      &__header
+        white-space: nowrap
+        max-width: 428px
+        @include font_header_600
+        line-height: 70px
+        text-align: left
+        color: #18063C
+
+      &__text
+        max-width: 529px
+        padding-top: 20px
+        opacity: 0.8
+        font-family: Inter
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        line-height: 36px
+
+.lower_sw_4
+  background-position-x: 2px
+  background-position-y: 30px
+
+.get_buttons
+  display: flex
+  margin-top: 48px
+
+.button_get_appstore
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  width: 179px
+  height: 73px
+  background: $c_orange_main
+  border-radius: 40px
+
+.text_on_button
+  margin-left: 6.7px
+
+.download_text
+  font-family: Inter
+  font-style: normal
+  font-weight: 600
+  font-size: 8px
+  line-height: 8px
+  letter-spacing: 0.045em
+  width: 91px
+
+.platform
+  font-family: Inter
+  font-style: normal
+  font-weight: 500
+  font-size: 17px
+  line-height: 24px
+  letter-spacing: -0.035em
+  width: 91px
+
+.button_get_googleplay
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  margin-left: 20.48px
+  width: 195px
+  height: 73px
+  border: 1px solid $c_orange_main
+  border-radius: 40px
+
+.c_orange
+  color: $c_orange_main
+
+.get__page__phone
+  margin-left: 111px
+  @media (max-width: 1110px)
+    margin-left: 5.7%
+
+.hand_l
+  margin-top: -438px
+  margin-left: 151px
+  @media (max-width: 1250px)
+    display: none
+
+.pic_wrapper
+  align-items: center
+  display: flex
+  flex-direction: row
+
+
+.hand_r_v1
+  margin-left: 33px
+  @media (max-width: 1250px)
+    display: none
+
+
+.footer
+  margin-top: 129px
+  margin-bottom: 60px
+
+  &__main-info
+    @include font_header
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+
+    &__nav
+      &__link
+        &:not(:last-child)
+          margin-right: 48px
+
+    &__logo
+      width: 134px
+      height: 30px
+
+    &__col
+      &__social-networks
+        &:not(:last-child)
+          margin-right: 44px
+
+.footer_line
+  margin-top: 61px
+  width: 62.5%
+  opacity: 0.6
+  color: $c_gray
+  size: 1px
+
+.last_text_inf
+  @include inter_text_400
+  margin-top: 40px
+
+.footer_left_info
+  display: flex
+
+.terms-condition
+  margin-right: 108px
+
+section
+  overflow: hidden
