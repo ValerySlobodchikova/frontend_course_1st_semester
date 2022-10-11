@@ -1273,6 +1273,7 @@ input:checked + .slider:before
       margin-top: 0px
       flex-direction: column
       align-items: flex-start
+      margin-bottom: 0
 
     &__textinfo
       display: flex
@@ -1317,10 +1318,10 @@ input:checked + .slider:before
   background-size: 176px 35px
   background-position-x: 69px
   background-position-y: 31px
-  @media (max-width: 600px)
+  @media (max-width: 660px)
     background-size: 106px 21px
     background-position-x: 6px
-    background-position-y: 17px
+    background-position-y: 13px
 
 
 .partner_card_column
@@ -1416,19 +1417,36 @@ input:checked + .slider:before
     justify-content: center
     flex-direction: column
     align-items: center
+    @media (max-width: 1030px)
+      width: 87.2%
+      align-items: flex-start
+      margin-top: 0
+      margin-bottom: 80px
+      margin-top: 80px
+      justify-content: normal
 
     &__textinfo
       display: flex
       flex-direction: column
       align-items: center
-      min-width: 568px
-
+      @media (min-width: 1030.1px)
+        min-width: 568px
+      @media (max-width: 1030px)
+        align-items: flex-start
+      @media (max-width: 571px)
+        width: 78.89%
       &__header
+        white-space: nowrap
         max-width: 498px
         @include font_header_600
         line-height: 70px
         text-align: left
         color: #18063C
+        @media (max-width: 571px)
+          @include font_header_600_24
+          line-height: 33.6px
+          text-transform: capitalize
+
 
       &__text
         max-width: 302px
@@ -1436,25 +1454,46 @@ input:checked + .slider:before
         @include inter_text_400
         opacity: 0.8
         line-height: 36px
-
-.lower_sw_3
+        @media (max-width: 1030px)
+          display: none
+.reviews_swash
+  background: url('../assets/main_page/swash_mp.png') no-repeat
+  background-size: 176px 35px
   background-position-x: 99px
   background-position-y: 31px
+  @media (max-width: 571px)
+    background-size: 106px 21px
+    background-position-x: 46px
+    background-position-y: 12px
+
 
 .review_block
   margin-top: 60px
   display: flex
   flex-direction: row
+  @media (max-width: 1030px)
+    flex-direction: column
+    margin-top: 30px
 
 .review_block_text_info
   display: flex
   flex-direction: column
   margin-top: 65px
   margin-left: 38px
+  @media (max-width: 1030px)
+    margin-left: 0
+    margin-top: 30px
+    width: 100%
 
 .oval
   width: 298px
   height: 379px
+  @media (max-width: 1030px)
+    display: none
+.avatar_rectangle
+  width: 51.98%
+  @media (min-width: 1030.1px)
+    display: none
 
 .review_block_text_info_text
   max-width: 652px
@@ -1464,6 +1503,10 @@ input:checked + .slider:before
   font-size: 20px
   line-height: 36px
   opacity: 0.8
+  @media (max-width: 570px)
+    font-size: 16px
+    line-height: 28.8px
+    width: 100%
 
 .review_block_text_info_author
   margin-top: 36px
@@ -1472,6 +1515,10 @@ input:checked + .slider:before
   font-weight: 500
   font-size: 24px
   line-height: 24px
+  @media (max-width: 570px)
+    font-size: 20px
+    line-height: 24px
+    margin-top: 28px
 
 .review_block_text_info_profession
   margin-top: 16px
@@ -1481,19 +1528,41 @@ input:checked + .slider:before
   font-size: 18px
   line-height: 26px
   opacity: 0.7
-
+  @media (max-width: 570px)
+    font-size: 16px
+    line-height: 26px
+    margin-top: 10px
+.navigator
+  width: 102px
+  margin-top: 28px
+  @media (max-width: 1030px)
+    width: 30.27%
+    margin-top: 14px
 .like
-  width: 272px
   position: absolute
   margin-top: -514px
-  margin-left: -1543px
+  width: 14.16%
+  margin-left: -80.36%
+  @media (min-width: 571.1px) and (max-width: 1030px)
+    margin-left: 50.45%
+    width: 18.96%
+    margin-top: 90px
+  @media (max-width: 571px)
+    margin-top: 47px
+    margin-left: 50.45%
+    width: 18.96%
 
 .chat
   width: 196px
   position: absolute
   margin-top: 418px
   margin-left: -1162px
-
+  @media (min-width: 1030.1px) and (max-width: 1380px)
+    display: none
+  @media (max-width: 1030px)
+    width: 21.06%
+    margin-left: 90.82%
+    margin-top: 136px
 .emoji
   width: 163px
   position: absolute
@@ -1521,6 +1590,13 @@ input:checked + .slider:before
     align-items: center
     @media (max-width: 1250px)
       justify-content: center
+    @media (max-width: 990px)
+      flex-direction: column
+      width: 87.2%
+      justify-content: normal
+      align-items: flex-start
+      margin-top: 48px
+      margin-bottom: 48px
 
     &__textinfo
       display: flex
@@ -1536,16 +1612,37 @@ input:checked + .slider:before
         line-height: 70px
         text-align: left
         color: #18063C
+        @media (max-width: 990px)
+          width: 71.65%
+        @media (max-width: 571px)
+          font-size: 24px
+          line-height: 33.6px
+          text-transform: capitalize
 
       &__text
         max-width: 529px
-        padding-top: 20px
+        margin-top: 20px
         opacity: 0.8
         font-family: Inter
         font-style: normal
         font-weight: 400
         font-size: 20px
         line-height: 36px
+        @media (max-width: 990px)
+          width: 100%
+        @media (max-width: 571px)
+          font-size: 16px
+          line-height: 30px
+          margin-top: 16px
+.get_swash
+  background: url('../assets/main_page/swash_mp.png') no-repeat
+  background-size: 176px 35px
+  background-position-x: 2px
+  background-position-y: 30px
+  @media (max-width: 571px)
+    background-size: 69px 15px
+    background-position-x: 28px
+    background-position-y: 12px
 
 .lower_sw_4
   background-position-x: 2px
@@ -1554,6 +1651,10 @@ input:checked + .slider:before
 .get_buttons
   display: flex
   margin-top: 48px
+  @media (max-width: 990px)
+    flex-direction: column
+  @media (max-width: 571px)
+    margin-top: 30px
 
 .button_get_appstore
   display: flex
@@ -1596,6 +1697,10 @@ input:checked + .slider:before
   height: 73px
   border: 1px solid $c_orange_main
   border-radius: 40px
+  @media (max-width: 990px)
+    margin-left: 0
+    margin-top: 16px
+
 
 .c_orange
   color: $c_orange_main
@@ -1604,6 +1709,8 @@ input:checked + .slider:before
   margin-left: 111px
   @media (max-width: 1110px)
     margin-left: 5.7%
+  @media (max-width: 990px)
+    display: none
 
 .hand_l
   margin-top: -438px
