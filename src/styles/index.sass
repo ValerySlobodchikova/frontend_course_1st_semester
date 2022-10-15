@@ -160,8 +160,6 @@ $c_bg_blue: #F3FDFE
   justify-content: space-between
   align-items: center
   height: 62px
-  //margin-top: 31px
-  //margin-bottom: 34px
   background-color: $c_bg_beige
 
 
@@ -235,9 +233,6 @@ $c_bg_blue: #F3FDFE
 .navbar .menu-items
   background-color: #FA865F
   border-radius: 50px
-  //padding-top: 120px
-  //box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5)
-  //height: 100vh
   width: 100%
   height: 80vw
   transform: translate(-150%)
@@ -795,7 +790,6 @@ $c_bg_blue: #F3FDFE
         @media (max-width: 780px)
           width: 82.08%
           margin-bottom: 12px
-          //margin-top: 48px
           @include font_header_600_24
           line-height: 36px
 
@@ -948,6 +942,7 @@ $c_bg_blue: #F3FDFE
   margin-bottom: 160px
   @media (max-width: 780px)
     margin: 0
+
   &__page
     position: relative
     margin: 0 auto
@@ -1020,8 +1015,6 @@ $c_bg_blue: #F3FDFE
   flex-direction: column
   margin-top: 40px
   width: 100%
-  //aspect-ratio: 1.135 / 1
-  //height: 608px
   border: 1px solid $c_orange_main
   border-radius: 30px
   justify-content: center
@@ -1313,6 +1306,7 @@ input:checked + .slider:before
           width: 100%
         @media (max-width: 660px)
           line-height: 28.8px
+
 .partners_swash
   background: url('../assets/main_page/swash_mp.png') no-repeat
   background-size: 176px 35px
@@ -1351,8 +1345,10 @@ input:checked + .slider:before
   margin-left: 3.96%
   @media (max-width: 1050px)
     margin-left: 10px
+
   :not(:last-child)
     margin-bottom: 54px
+
   @media (max-width: 1000px)
     display: none
 
@@ -1361,8 +1357,10 @@ input:checked + .slider:before
   width: 20.05%
   align-items: flex-start
   margin-left: 2.92%
+
   :not(:last-child)
     margin-bottom: 59px
+
   @media (max-width: 1000px)
     display: none
 
@@ -1388,19 +1386,24 @@ input:checked + .slider:before
     margin-top: 28px
   @media (max-width: 1000px)
     margin-bottom: 40px
+
 .partners_card
   width: 46.87%
+
 .partner_card_row_1
   width: 79.25%
   @media (min-width: 1000.1px)
     display: none
+
 .partner_card_row_2
   margin-top: 3%
   width: 79.25%
   @media (min-width: 1000.1px)
     display: none
+
 .add_margin_m_c
   margin-right: 3%
+
 .reviews
   position: relative
   background: white
@@ -1435,6 +1438,7 @@ input:checked + .slider:before
         align-items: flex-start
       @media (max-width: 571px)
         width: 78.89%
+
       &__header
         white-space: nowrap
         max-width: 498px
@@ -1456,6 +1460,7 @@ input:checked + .slider:before
         line-height: 36px
         @media (max-width: 1030px)
           display: none
+
 .reviews_swash
   background: url('../assets/main_page/swash_mp.png') no-repeat
   background-size: 176px 35px
@@ -1490,6 +1495,7 @@ input:checked + .slider:before
   height: 379px
   @media (max-width: 1030px)
     display: none
+
 .avatar_rectangle
   width: 51.98%
   @media (min-width: 1030.1px)
@@ -1532,12 +1538,14 @@ input:checked + .slider:before
     font-size: 16px
     line-height: 26px
     margin-top: 10px
+
 .navigator
   width: 102px
   margin-top: 28px
   @media (max-width: 1030px)
     width: 30.27%
     margin-top: 14px
+
 .like
   position: absolute
   margin-top: -514px
@@ -1563,12 +1571,12 @@ input:checked + .slider:before
     width: 21.06%
     margin-left: 90.82%
     margin-top: 136px
+
 .emoji
   width: 163px
   position: absolute
   margin-top: 813px
   margin-left: 1552px
-  //1730
   @media (max-width: 1730px)
     display: none
 
@@ -1634,6 +1642,7 @@ input:checked + .slider:before
           font-size: 16px
           line-height: 30px
           margin-top: 16px
+
 .get_swash
   background: url('../assets/main_page/swash_mp.png') no-repeat
   background-size: 176px 35px
@@ -1733,21 +1742,35 @@ input:checked + .slider:before
 .footer
   margin-top: 129px
   margin-bottom: 60px
+  @media (max-width: 990px)
+    margin-top: 80px
+    margin-bottom: 40px
 
   &__main-info
     @include font_header
     display: flex
     align-items: center
     justify-content: space-evenly
+    @media (max-width: 990px)
+      flex-direction: column
+      align-items: flex-start
+      width: 64.8%
+      margin-left: 6.4%
 
     &__nav
       &__link
         &:not(:last-child)
           margin-right: 48px
+          @media (max-width: 990px)
+            margin-right: 0px
+            margin-bottom: 28px
 
     &__logo
       width: 134px
       height: 30px
+      @media (max-width: 990px)
+        width: 55.14%
+        height: auto
 
     &__col
       &__social-networks
@@ -1760,16 +1783,45 @@ input:checked + .slider:before
   opacity: 0.6
   color: $c_gray
   size: 1px
+  @media (max-width: 990px)
+    display: none
 
 .last_text_inf
   @include inter_text_400
   margin-top: 40px
+  @media (max-width: 990px)
+    margin-top: 28px
+    opacity: 0.5
 
 .footer_left_info
   display: flex
 
 .terms-condition
   margin-right: 108px
+  @media (max-width: 990px)
+    margin-right: 0
 
 section
   overflow: hidden
+
+.soc-net-desktop
+  @media (max-width: 990px)
+    display: none
+
+.soc-net-mobile
+  width: 90%
+  margin-top: 46px
+  @media (min-width: 990.1px)
+    display: none
+
+.footer_nav_link_mobile
+  @media (max-width: 990px)
+    display: flex
+    flex-direction: column
+    margin-top: 48.59px
+    margin-bottom: 12px
+
+.f-l-info-mobile
+  @media (max-width: 990px)
+    display: flex
+    flex-direction: column
