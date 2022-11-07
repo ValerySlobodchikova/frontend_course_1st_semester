@@ -1,0 +1,62 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+.authorization_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.input_box {
+    position: relative;
+    width: 16.6%;
+    margin-bottom: 24px;
+}
+
+.password-control {
+    position: absolute;
+    top: 13px;
+    right: 21px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../assets/Eye.svg') 0 0 no-repeat;
+}
+
+.password-control.view {
+    background: url('../assets/EyeHide.svg') 0 0 no-repeat;
+}
+
+.any-input {
+
+    width: 100%;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 14px 16px;
+    font-family: Inter;
+    box-sizing: border-box;
+    border: 1px solid #ECEBED;
+    box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+}
+.log-in-button {
+    width: 16.6%;
+    height: 48px;
+    background: #6979F8;
+    border-radius: 6px;
+    border: 0px;
+    font-family: Inter;
+    line-height: 22px;
+    font-weight: 700;
+    font-size: 17px;
+    color: white;
+}
+.log-in-button:hover {
+    background: #7d8bfc;
+}
+
