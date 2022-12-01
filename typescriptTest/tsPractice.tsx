@@ -1,17 +1,17 @@
 type Tag = {
-    link string,
-    title string
+    link: string,
+    title: string
 }
 
 type Props = {
-    title string,
-    content string,
-    isImportant boolean,
-    images string[],
-    tags Tag[],
+    title: string,
+    content: string,
+    isImportant: boolean,
+    images: string[],
+    tags: Tag[],
 }
-const Article = (props Props) = {
-    const {
+const Article = (props: Props) => {
+    const { 
         title,
         content,
         isImportant,
@@ -19,23 +19,23 @@ const Article = (props Props) = {
         tags
     } = props
 
-    const renderTag = (tag Tag) = (
-        a href={ tag.link } key={tag.link}
+    const renderTag = (tag: Tag) => (
+        <a href={ tag.link } key={tag.link}>
             { tag.title }
-        a
+        </a>
     );
 
     return (
-        
-            h2{ title }h2
-            div{ content }div
+        <>
+            <h2>{ title }</h2>
+            <div>{ content }</div>
             { isImportant && (
-                pIt is important!p
+                <p>It is important!</p>
             ) }
-            { images && images.map((item, index) = (
-                img src={ item } key={index} 
+            { images && images.map((item, index) => (
+                <img src={ item } key={index} />
             )) }
-            { tags && tags.map(item = renderTag(item)) }
-        
+            { tags && tags.map(item => renderTag(item)) }
+        </>
     );
 }
